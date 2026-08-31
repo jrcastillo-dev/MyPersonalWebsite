@@ -1,6 +1,6 @@
 ## About the Project
 The webpage contains my personal information, profile picture, program and year level, short biography, skills, and contact information. 
-It also includes JavaScript interactivity through a welcome message button.
+It also includes JavaScript interactivity.
 
 ## Features
 * Personal profile
