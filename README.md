@@ -9,7 +9,6 @@ It also includes JavaScript interactivity.
 * Short biography
 * Skills section
 * Contact information
-* Welcome message button
 * Responsive design
 * Hover effects
 * Mobile-friendly layout
