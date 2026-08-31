@@ -33,9 +33,6 @@ The webpage is designed to work on:
 * Tablet
 * Mobile devices
 
-## JavaScript
-JavaScript is used to add interactivity to the webpage, particularly the button that displays a welcome message.
-
 ## How to Run
 1. Download or clone the repository.
 2. Open the project folder.
