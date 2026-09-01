@@ -12,6 +12,7 @@ document.getElementById("greetBtn").addEventListener("click", function () {
     });
 });
 // Console section: student info, date & time
+const messageBtn = document.getElementById("messageBtn");
 const infoBtn = document.getElementById("infoBtn");
 const clockBtn = document.getElementById("clockBtn");
 const consoleOutput = document.getElementById("consoleOutput");
