@@ -5,19 +5,27 @@ const student = {
   yearLevel: "3rd Year",
   University: "Nueva Vizcaya State University"
 };
-
 //Learn More
 document.getElementById("greetBtn").addEventListener("click", function () {
     document.getElementById("about").scrollIntoView({
         behavior: "smooth"
     });
 });
-
 // Console section: student info, date & time
 const infoBtn = document.getElementById("infoBtn");
 const clockBtn = document.getElementById("clockBtn");
 const consoleOutput = document.getElementById("consoleOutput");
-
+// Display My Message
+let messageOpen = false;
+messageBtn.addEventListener("click", () => {
+  if (messageOpen) {
+    messageOpen = false;
+    consoleOutput.textContent = "closed!";
+    return;
+  }
+  messageOpen = true;
+  consoleOutput.textContent = "Hello, welcome to my website!";
+});
 // Display student info
 let infoOpen = false
 infoBtn.addEventListener("click", () => {
@@ -35,7 +43,6 @@ infoBtn.addEventListener("click", () => {
     `  school: ${student.University}\n` +
     `}`;
 });
-
 // Show current date & time
 let clockInterval = null;
 clockBtn.addEventListener("click", () => {
@@ -52,7 +59,6 @@ clockBtn.addEventListener("click", () => {
   updateClock();
   clockInterval = setInterval(updateClock, 1000);
 });
-
 // Theme toggle 
 const themeToggleBtn = document.getElementById("themeToggle");
 function toggleTheme() {
@@ -61,6 +67,5 @@ function toggleTheme() {
   consoleOutput.textContent = `theme set to "${mode}"`;
 }
 themeToggleBtn.addEventListener("click", toggleTheme);
-
 // Footer 
 document.getElementById("year").textContent = new Date().getFullYear();
